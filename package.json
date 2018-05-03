@@ -1,0 +1,20 @@
+{
+  "name": "meta-takeover",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "bin": {
+    "takeover": "src/main.js"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node src/main.js ./test/old-struct ./test/new-struct && echo All Dates in new-struct should now have the year 1990\n",
+    "reset": "node test/reset.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ronomon/utimes": "^2.2.0"
+  }
+}
