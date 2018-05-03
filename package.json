@@ -1,7 +1,7 @@
 {
   "name": "meta-takeover",
   "version": "1.0.0",
-  "description": "",
+  "description": "Takes the birthtime, mtime and ctime over to another file or directory.",
   "main": "src/main.js",
   "bin": {
     "takeover": "src/main.js"
@@ -11,8 +11,8 @@
     "test": "node src/main.js ./test/old-struct ./test/new-struct && echo All Dates in new-struct should now have the year 1990\n",
     "reset": "node test/reset.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["cli", "birthtime", "ctime", "mtime", "meta"],
+  "author": "Andy Bitz",
   "license": "MIT",
   "dependencies": {
     "@ronomon/utimes": "^2.2.0"
